@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Easter Date Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Easter Date Calculator</h1>
+    </header>
+    <form action="cgi-bin/easter_calc.py" method="post">
+        <label for="year">Enter Year:</label>
+        <input type="text" id="year" name="year" required>
+        <br>
+        <label>Output Format:</label>
+        <br>
+        <input type="radio" id="numeric" name="format" value="numeric" checked>
+        <label for="numeric">Numerically (dd/mm/year)</label>
+        <br>
+        <input type="radio" id="verbose" name="format" value="verbose">
+        <label for="verbose">Verbosely (day of named_month year)</label>
+        <br>
+        <input type="radio" id="both" name="format" value="both">
+        <label for="both">Both Formats</label>
+        <br>
+        <input type="submit" value="Calculate Easter Date">
+    </form>
+    <footer>
+        <p>&copy; 2023 Easter Date Calculator</p>
+    </footer>
+</body>
+</html>
